@@ -42,8 +42,8 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     let myArea = parseFloat(myCircle.area.toFixed(2));
     expect(myArea).toBe(28.26);
     // Teste que a função retorna, num objeto, os dados corretos de um círculo de raio 3.
-    expect(circle(3)).toHaveProperty(`radius`, 3);
+    expect(circle(3).radius).toBe(3);
     expect(myArea).toBe(28.26);
-    expect(circle(3)).toHaveProperty(`circumference`, 18.84);
+    expect(circle(3).circumference).toBe(18.84);
   });
 });
