@@ -41,6 +41,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(typeof productDetails()[0]).toBe(`object`);
     expect(typeof productDetails()[1]).toBe(`object`);
     // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
+    // https://www.codegrepper.com/code-examples/javascript/comparing+two+objects+jest
     expect(productDetails('Alcool gel', 'Máscara')).toEqual(expect.arrayContaining([
       expect.objectContaining({name:'Alcool gel'}),
       expect.objectContaining({name:'Máscara'})
